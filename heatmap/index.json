@@ -1,0 +1,94 @@
+{
+  "data": [{
+    "id": "data",
+    "label": "Data Fields",
+    "elements": [{
+        "id": "x",
+        "label": "X Dimension",
+        "type": "DIMENSION",
+        "options": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "id": "y",
+        "label": "Y Dimension",
+        "type": "DIMENSION",
+        "options": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "id": "value",
+        "label": "Size Metric",
+        "type": "METRIC",
+        "options": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    ]
+  }],
+  "style": [{
+
+    "id": "styleSelect",
+    "label": "Heatmap Style",
+    "elements": [{
+        "id": "radius",
+        "label": "Radius Size (px)",
+        "defaultValue": "15",
+        "type": "INTERVAL"
+      },
+      {
+        "id": "blur",
+        "label": "Blur Size (px)",
+        "defaultValue": "15",
+        "type": "TEXTINPUT"
+      },
+      {
+        "id": "minOpacity",
+        "label": "Minimum Opacity (0.00 to 1.00)",
+        "defaultValue": "0.01",
+        "type": "TEXTINPUT"
+      }
+    ]
+  }, {
+    "id": "colorSelect",
+    "label": "Color Selection (Low, Mid, High, Max)",
+    "elements": [{
+        "id": "lowColor",
+        "label": "Low Value Color (25%)",
+        "defaultValue": {
+          "color": "#0000ff"
+        },
+        "type": "FILL_COLOR"
+      },
+      {
+        "id": "midColor",
+        "label": "Mid Value Color (55%)",
+        "defaultValue": {
+          "color": "#00ff00"
+        },
+        "type": "FILL_COLOR"
+      },
+      {
+        "id": "highColor",
+        "label": "High Value Color (75%)",
+        "defaultValue": {
+          "color": "#ffff00"
+        },
+        "type": "FILL_COLOR"
+      },
+      {
+        "id": "maxColor",
+        "label": "Max Value Color (100%)",
+        "defaultValue": {
+          "color": "#ff0000"
+        },
+        "type": "FILL_COLOR"
+      }
+    ]
+  }]
+}
